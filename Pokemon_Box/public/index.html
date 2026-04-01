@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Box Pokémon</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <form id="addPokemonForm">
+      <input type="text" id="pokemonName" placeholder="Digite o nome ou ID do Pokémon" required />
+      <button type="submit">Guardar Pokémon</button>
+    </form>
+    <div id="root"></div>
+    
+    <script src="script.js"></script>
+    
+    <!-- Script do Firebase -->
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyDtYCUA0nVYxshubZqOgtKbKBIAK2Qe_LY",
+        authDomain: "pokemon-register.firebaseapp.com",
+        projectId: "pokemon-register",
+        storageBucket: "pokemon-register.firebasestorage.app",
+        messagingSenderId: "575049079637",
+        appId: "1:575049079637:web:9f17a1ec274c104a1c2ddc"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
+  </body>
+</html>
